@@ -7,11 +7,11 @@ export const profile = {
   location: 'Madinah, Saudi Arabia',
   email: 'Abdul8rahmans@gmail.com',
   phone: '+966599209919',
-  photo: '../../public/Gemini_Generated_Image_czkrbiczkrbiczkr.jpg',
+  photo: '/Gemini_Generated_Image_czkrbiczkrbiczkr.jpg',
   certImages: [
-    '../../public/certificate-1.png',
-    '../../public/certificate-2.png',
-    '../../public/certificate-3.png',
+    '/certificate-1.png',
+    '/certificate-2.png',
+    '/certificate-3.png',
   ],
 };
 
