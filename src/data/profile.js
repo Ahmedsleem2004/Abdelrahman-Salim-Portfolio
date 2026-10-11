@@ -2,8 +2,9 @@
 export const profile = {
   name: 'Abdelrahman Salim',
   role: 'Projects Manager',
-  company: 'El Dagal Contracting',
-  companyAr: 'الدقل',
+  company: 'M.A.S Development',
+  companyAr: 'M.A.S Development',
+  developmentCompany: 'M.A.S Development',
   location: 'Madinah, Saudi Arabia',
   email: 'Abdul8rahmans@gmail.com',
   phone: '+966599209919',
@@ -12,70 +13,73 @@ export const profile = {
     '/certificate-1.png',
     '/certificate-2.png',
     '/certificate-3.png',
+    '/certificate-4.png',
+    '/certificate-5.png',
   ],
 };
-
-const AR = profile.companyAr;
 
 export const copy = {
   en: {
     nav: ['About', 'Expertise', 'Experience', 'Certificates', 'Services', 'Contact'],
     contact: 'Contact Me',
 
-    eyebrow: 'PROJECTS MANAGER · EL DAGAL · MADINAH',
-    heroTitle: 'Building Excellence,\nDelivering Results.',
+    eyebrow: 'PROJECTS MANAGER · M.A.S DEVELOPMENT · MADINAH',
+    heroTitle: 'Building a Cleaner,\nBetter Environment.',
     heroText:
-      'Experienced Projects Manager at El Dagal Contracting, focused on coordinating operations, managing projects, and delivering reliable results.',
+      'Projects Manager at M.A.S Development, focused on environmental services, public cleanliness, and coordinated project delivery across Madinah, Saudi Arabia.',
+
     explore: 'Explore Services',
     scroll: 'SCROLL TO EXPLORE',
 
     marquee: [
-      'PROJECT MANAGEMENT',
-      'CONTRACTING',
+      'ENVIRONMENTAL SERVICES',
+      'PUBLIC CLEANLINESS',
+      'WASTE MANAGEMENT',
       'WASTE TRANSPORT',
       'PEST CONTROL',
-      'OPERATIONS',
+      'PROJECT MANAGEMENT',
     ],
 
     aboutLabel: '01 / ABOUT',
-    aboutTitle: 'Experience Built\non Responsibility.',
+    aboutTitle: 'Environmental Services,\nBuilt on Responsibility.',
     aboutText:
-      'Projects Manager at El Dagal Contracting in Madinah, Saudi Arabia, with experience in project coordination, administrative work, and operations. Focused on organization, efficiency, and successful project delivery.',
+      'Abdelrahman Salim is a Projects Manager with more than 15 years of total professional experience. His professional background includes five years of administrative and operational experience at Madinah Region Municipality, alongside broader professional experience in coordination, operations, and project-related activities. Environmental services and public cleanliness are the primary areas highlighted in this profile.',
 
     stats: [
-      ['10+', 'Years of Experience'],
-      ['03', 'Core Service Areas'],
-      ['01', 'Team-Focused Approach'],
+      ['15+', 'Years of Total Experience'],
+      ['5 Years', 'Madinah Municipality Experience'],
+      ['01', 'Primary Focus: Environmental Services'],
+      ['03+', 'Service Areas'],
     ],
 
     quote:
-      'Strong projects are built through planning, coordination, and commitment.',
+      'A cleaner environment starts with planning, responsibility, and consistent execution.',
 
     expertiseLabel: '02 / EXPERTISE',
     expertiseTitle: 'Areas of Expertise',
     expertiseSub:
-      'Supporting project delivery through practical coordination and operational focus.',
+      'Supporting environmental services and project delivery through coordination, organization, and operational focus.',
 
     expertise: [
       [
         '01',
-        'Project Management',
-        'Coordinating project activities, priorities, and delivery requirements.',
+        'Environmental Services',
+        'Supporting environmental service operations and public cleanliness activities.',
       ],
       [
         '02',
-        'Operations Coordination',
-        'Organizing daily operations and supporting efficient workflows.',
+        'Waste Management & Transport',
+        'Coordinating waste collection, transportation, and related operational activities.',
       ],
       [
         '03',
-        'Administrative Work',
-        'Supporting documentation, reporting, and organized project records.',
+        'Project Management',
+        'Coordinating project requirements, daily activities, priorities, and delivery.',
       ],
       [
         '04',
-        'Team Coordination',
-        'Working with teams and stakeholders to support shared project goals.',
+        'Operations & Team Coordination',
+        'Organizing workflows and supporting communication between teams and stakeholders.',
       ],
     ],
 
@@ -87,8 +91,22 @@ export const copy = {
         period: 'Present',
         place: 'Madinah, Saudi Arabia',
         role: 'Projects Manager',
-        company: 'El Dagal Contracting',
-        desc: 'Managing project activities, coordinating operations, and supporting successful project delivery.',
+        company: 'M.A.S Development',
+        desc: 'Supporting project coordination and operational delivery, with emphasis on environmental services, public cleanliness, and related service activities.',
+      },
+      {
+        period: '5 Years',
+        place: 'Madinah, Saudi Arabia',
+        role: 'Administrative & Operational Experience',
+        company: 'Madinah Region Municipality',
+        desc: 'Five years of administrative and operational experience involving coordination, documentation, organizational activities, and support for public-service operations. These five years are part of more than 15 years of total professional experience.',
+      },
+      {
+        period: 'Earlier Professional Experience',
+        place: 'Saudi Arabia',
+        role: 'Operations & Project Coordination',
+        company: 'Previous Professional Experience',
+        desc: 'Additional professional experience contributing to a total career spanning more than 15 years. This entry is kept general until the original employers, job titles, and dates can be confirmed.',
       },
     ],
 
@@ -99,35 +117,48 @@ export const copy = {
     certSlot: 'Certificate',
 
     certs: [
-      {
-        title: 'Certificate of Appreciation – Municipal Elections',
-        issuer: 'Madinah Region Municipality',
-        year: '1436–1437 AH',
+      
+       {
+  title: 'Certificate of Appreciation – Municipal Volunteering',
+  issuer: 'Madinah Region Municipality – General Administration of Community Development',
+  year: '2019 – 1441 AH',
+
       },
-      {
-        title: 'Financial Planning Course',
-        issuer:
-          'Madinah Chamber of Commerce and Industry – Administrative Training and Development Center',
-        year: '2017',
-      },
-      {
-        title: 'Certificate Title Three',
-        issuer: 'Issuing Organization',
-        year: '20XX',
-      },
+ {
+  title: 'Certificate of Appreciation – Third Municipal Elections',
+  issuer: 'Madinah Region Municipality',
+  year: '1436–1437 AH',
+},
+     {
+  title: 'Certificate of Attendance – Financial Planning Course',
+  issuer: 'Madinah Chamber of Commerce and Industry – Administrative Training and Development Center',
+  year: '1438 AH – 2017',
+},
+
+{
+  title: 'Attendance Certificate – 5th EnviroCities World Forum 2015: From Waste to Energy',
+  issuer: 'EnviroCities Organizing Committee',
+  year: '2015',
+}
     ],
 
     projectLabel: '05 / SERVICES',
-    projectTitle: 'Areas of Work',
+    projectTitle: 'Environmental & Operational Services',
     projectText:
-      'Service areas associated with El Dagal Contracting and its operational activities.',
+      'Environmental services and public cleanliness are the primary focus, supported by waste transportation, pest control, and related operational services.',
 
     projects: [
       {
-        type: 'CONTRACTING',
+        type: 'ENVIRONMENTAL SERVICES',
         loc: 'MADINAH',
-        name: 'Contracting Services',
-        desc: 'Supporting contracting projects through coordination and organized execution.',
+        name: 'Environmental Services & Public Cleanliness',
+        desc: 'Supporting cleaner public spaces and organized environmental service operations.',
+      },
+      {
+        type: 'WASTE MANAGEMENT',
+        loc: 'MADINAH',
+        name: 'Waste Transportation',
+        desc: 'Waste transportation and related services supporting cleaner, better-managed environments.',
       },
       {
         type: 'PEST CONTROL',
@@ -136,23 +167,18 @@ export const copy = {
         desc: 'Pest-control services for facilities and operational environments.',
       },
       {
-        type: 'WASTE TRANSPORT',
-        loc: 'MADINAH',
-        name: 'Waste Transportation',
-        desc: 'Waste transportation services supporting cleaner and better-managed environments.',
-      },
-      {
-        type: 'INFRASTRUCTURE',
+        type: 'CONTRACTING',
         loc: 'SAUDI ARABIA',
-        name: 'Project Coordination',
-        desc: 'Coordination and operational support for project-related activities.',
+        name: 'Contracting & Project Coordination',
+        desc: 'Project coordination and contracting support for related operational and service activities.',
       },
     ],
 
     contactLabel: '06 / CONTACT',
-    contactTitle: 'Let’s Build\nSomething Great.',
+    contactTitle: 'Let’s Build\nA Cleaner Future.',
     contactText:
-      'For professional inquiries and collaboration, feel free to get in touch.',
+      'For professional inquiries, environmental service coordination, and collaboration, feel free to get in touch.',
+
     email: 'Email',
     call: 'Phone',
     whatsapp: 'WhatsApp',
@@ -174,61 +200,63 @@ export const copy = {
     ],
     contact: 'تواصل معي',
 
-    eyebrow: 'مدير مشاريع · شركة الدقل · المدينة المنورة',
-    heroTitle: 'نبني التميز،\nونحقق النتائج.',
+    eyebrow: 'مدير مشاريع · M.A.S Development · المدينة المنورة',
+    heroTitle: 'نحو بيئة أنظف،\nومستقبل أفضل.',
     heroText:
-      'مدير مشاريع في شركة الدقل، مع التركيز على تنسيق العمليات وإدارة المشاريع والعمل على تحقيق نتائج موثوقة.',
+      'عبدالرحمن سليم، مدير مشاريع في M.A.S Development، مع التركيز على الخدمات البيئية والنظافة العامة وتنسيق تنفيذ المشاريع في المدينة المنورة، المملكة العربية السعودية.',
 
     explore: 'استكشف الخدمات',
     scroll: 'مرر لاستكشاف الموقع',
 
     marquee: [
-      'إدارة المشاريع',
-      'المقاولات',
+      'الخدمات البيئية',
+      'النظافة العامة',
+      'إدارة النفايات',
       'نقل النفايات',
       'مكافحة الآفات',
-      'تنسيق العمليات',
+      'إدارة المشاريع',
     ],
 
     aboutLabel: '01 / نبذة عني',
-    aboutTitle: 'خبرة تقوم على\nالمسؤولية والإنجاز.',
+    aboutTitle: 'خدمات بيئية،\nومسؤولية نحو المجتمع.',
     aboutText:
-      'مدير مشاريع في شركة الدقل للمقاولات بالمدينة المنورة، المملكة العربية السعودية، مع خبرة في تنسيق المشاريع والأعمال الإدارية والعمليات، والاهتمام بالتنظيم والكفاءة وإنجاز الأعمال بنجاح.',
+      'عبدالرحمن سليم مدير مشاريع يمتلك خبرة مهنية إجمالية تزيد على 15 عامًا. تشمل خبرته خمس سنوات من العمل الإداري والتشغيلي في أمانة منطقة المدينة المنورة، إلى جانب خبرات مهنية أخرى في التنسيق والعمليات والأنشطة المرتبطة بالمشاريع. وتُبرز هذه الصفحة الخدمات البيئية والنظافة العامة باعتبارهما محور النشاط الأساسي.',
 
     stats: [
-      ['10+', 'سنوات من الخبرة'],
-      ['03', 'مجالات خدمة رئيسية'],
-      ['01', 'منهج قائم على العمل الجماعي'],
+      ['أكثر من 15 سنة', 'إجمالي سنوات الخبرة'],
+      ['5 سنوات', 'خبرة في أمانة المدينة المنورة'],
+      ['01', 'النشاط الأساسي: الخدمات البيئية'],
+      ['03+', 'مجالات خدمية'],
     ],
 
     quote:
-      'تتحقق المشاريع الناجحة بالتخطيط والتنسيق والالتزام.',
+      'البيئة النظيفة تبدأ بالتخطيط والمسؤولية واستمرار العمل بكفاءة.',
 
     expertiseLabel: '02 / مجالات الخبرة',
     expertiseTitle: 'مجالات الخبرة',
     expertiseSub:
-      'دعم تنفيذ المشاريع من خلال التنسيق العملي والاهتمام بكفاءة العمليات.',
+      'دعم الخدمات البيئية وتنفيذ المشاريع من خلال التنسيق والتنظيم والاهتمام بكفاءة العمليات.',
 
     expertise: [
       [
         '01',
-        'إدارة المشاريع',
-        'تنسيق أنشطة المشاريع والأولويات ومتطلبات التنفيذ.',
+        'الخدمات البيئية',
+        'دعم العمليات المرتبطة بالخدمات البيئية وأعمال النظافة العامة.',
       ],
       [
         '02',
-        'تنسيق العمليات',
-        'تنظيم العمليات اليومية ودعم سير العمل بكفاءة.',
+        'إدارة ونقل النفايات',
+        'تنسيق أعمال جمع النفايات ونقلها والأنشطة التشغيلية المرتبطة بها.',
       ],
       [
         '03',
-        'الأعمال الإدارية',
-        'دعم إعداد المستندات والتقارير وتنظيم سجلات المشاريع.',
+        'إدارة المشاريع',
+        'تنسيق متطلبات المشاريع والأنشطة اليومية والأولويات ومتابعة التنفيذ.',
       ],
       [
         '04',
-        'تنسيق فرق العمل',
-        'التعاون مع فرق العمل والأطراف المعنية لتحقيق أهداف المشروع.',
+        'تنسيق العمليات وفرق العمل',
+        'تنظيم سير العمل ودعم التواصل بين فرق العمل والأطراف المعنية.',
       ],
     ],
 
@@ -240,8 +268,22 @@ export const copy = {
         period: 'حتى الآن',
         place: 'المدينة المنورة، السعودية',
         role: 'مدير مشاريع',
-        company: 'شركة الدقل للمقاولات',
-        desc: 'إدارة أنشطة المشاريع وتنسيق العمليات ودعم تنفيذ المشاريع بنجاح.',
+        company: 'M.A.S Development',
+        desc: 'دعم تنسيق المشاريع ومتابعة العمليات التشغيلية، مع التركيز على الخدمات البيئية والنظافة العامة والخدمات المرتبطة بها.',
+      },
+      {
+        period: '5 سنوات',
+        place: 'المدينة المنورة، السعودية',
+        role: 'خبرة إدارية وتشغيلية',
+        company: 'أمانة منطقة المدينة المنورة',
+        desc: 'خبرة إدارية وتشغيلية لمدة خمس سنوات شملت التنسيق وإعداد المستندات والأنشطة التنظيمية ودعم العمليات الخدمية. وتمثل هذه السنوات جزءًا من إجمالي خبرة مهنية تتجاوز 15 عامًا.',
+      },
+      {
+        period: 'خبرات مهنية سابقة',
+        place: 'المملكة العربية السعودية',
+        role: 'العمليات وتنسيق المشاريع',
+        company: 'خبرات مهنية سابقة',
+        desc: 'خبرات مهنية إضافية تساهم في إجمالي مسيرة عملية تتجاوز 15 عامًا. تم إبقاء هذه الخبرة بصياغة عامة لحين التأكد من أسماء جهات العمل والمسميات الوظيفية والتواريخ الأصلية.',
       },
     ],
 
@@ -253,34 +295,45 @@ export const copy = {
 
     certs: [
       {
-        title: 'شهادة شكر وتقدير – الانتخابات البلدية',
-        issuer: 'أمانة منطقة المدينة المنورة',
-        year: '١٤٣٦–١٤٣٧ هـ',
-      },
-      {
-        title: 'دورة التخطيط المالي',
-        issuer:
-          'الغرفة التجارية الصناعية بالمدينة المنورة – مركز التدريب والتطوير الإداري',
-        year: '٢٠١٧م',
-      },
-      {
-        title: 'عنوان الشهادة الثالثة',
-        issuer: 'الجهة المانحة',
-        year: '20XX',
-      },
+  title: 'شهادة شكر وتقدير – التطوع البلدي',
+  issuer: 'أمانة منطقة المدينة المنورة – الإدارة العامة للتنمية المجتمعية',
+  year: '2019م – ١٤٤١هـ',
+},
+     {
+  title: 'شهادة شكر وتقدير – انتخابات المجالس البلدية، الدورة الثالثة',
+  issuer: 'أمانة منطقة المدينة المنورة',
+  year: '١٤٣٦–١٤٣٧ هـ',
+},
+     {
+  title: 'شهادة حضور دورة التخطيط المالي',
+  issuer: 'الغرفة التجارية الصناعية بالمدينة المنورة – مركز التدريب والتطوير الإداري',
+  year: '١٤٣٨ هـ – ٢٠١٧م',
+},
+
+{
+  title: 'شهادة حضور – المؤتمر العالمي الخامس بيئة المدن 2015: من نفايات إلى طاقة',
+  issuer: 'اللجنة المنظمة لمؤتمر بيئة المدن',
+  year: '2015م – ١٤٣٦هـ',
+},
     ],
 
     projectLabel: '05 / الخدمات',
-    projectTitle: 'مجالات العمل',
+    projectTitle: 'الخدمات البيئية والتشغيلية',
     projectText:
-      'مجالات الخدمات المرتبطة بشركة الدقل للمقاولات وأنشطتها التشغيلية.',
+      'الخدمات البيئية والنظافة العامة هما محور النشاط الأساسي، وتدعمهما خدمات نقل النفايات ومكافحة الآفات والخدمات التشغيلية المرتبطة بها.',
 
     projects: [
       {
-        type: 'المقاولات',
+        type: 'الخدمات البيئية',
         loc: 'المدينة المنورة',
-        name: 'خدمات المقاولات',
-        desc: 'دعم مشاريع المقاولات من خلال التنسيق والتنفيذ المنظم.',
+        name: 'الخدمات البيئية والنظافة العامة',
+        desc: 'دعم نظافة الأماكن العامة وتنظيم عمليات الخدمات البيئية للحفاظ على بيئة أنظف.',
+      },
+      {
+        type: 'إدارة النفايات',
+        loc: 'المدينة المنورة',
+        name: 'نقل النفايات',
+        desc: 'خدمات نقل النفايات والخدمات المرتبطة بها للمساهمة في بيئة أنظف وأكثر تنظيمًا.',
       },
       {
         type: 'مكافحة الآفات',
@@ -289,23 +342,18 @@ export const copy = {
         desc: 'خدمات مكافحة الآفات للمنشآت وبيئات العمل.',
       },
       {
-        type: 'نقل النفايات',
-        loc: 'المدينة المنورة',
-        name: 'خدمات نقل النفايات',
-        desc: 'خدمات نقل النفايات للمساهمة في الحفاظ على بيئة أنظف وأكثر تنظيمًا.',
-      },
-      {
-        type: 'البنية التحتية',
+        type: 'الخدمات التشغيلية',
         loc: 'السعودية',
-        name: 'تنسيق المشاريع',
-        desc: 'التنسيق والدعم التشغيلي للأنشطة المرتبطة بالمشاريع.',
+        name: 'تنسيق المشاريع والخدمات التشغيلية',
+        desc: 'تنسيق المشاريع ودعم الأنشطة التشغيلية والخدمية المرتبطة بها.',
       },
+      
     ],
 
     contactLabel: '06 / التواصل',
-    contactTitle: 'معًا نصنع\nإنجازًا مميزًا.',
+    contactTitle: 'معًا نبني\nمستقبلًا أكثر نظافة.',
     contactText:
-      'يسعدني التواصل بشأن الفرص المهنية والاستفسارات والتعاون.',
+      'للاستفسارات المهنية والتنسيق بشأن الخدمات البيئية وفرص التعاون، يسعدني التواصل.',
 
     email: 'البريد الإلكتروني',
     call: 'الهاتف',

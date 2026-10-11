@@ -76,16 +76,18 @@ function IntroLoader({ onDone }) {
     <div className="intro-loader" ref={root} aria-label="Loading">
       <div className="loader-inner">
         <span className="loader-kicker">
-          PROJECTS MANAGER · EL DAGAL · MADINAH
+          ENVIRONMENTAL SERVICES · PUBLIC CLEANLINESS
         </span>
 
         <div className="loader-name">
-          ABDELRAHMAN <span>SALIM</span>
+          M.A.S <span>DEVELOPMENT</span>
         </div>
 
         <div className="loader-line" />
 
-        <span className="loader-foot">PLAN · BUILD · DELIVER</span>
+        <span className="loader-foot">
+          ENVIRONMENTAL SERVICES · SUSTAINABLE OPERATIONS
+        </span>
       </div>
     </div>
   );
@@ -99,97 +101,70 @@ const lines = (str, goldFrom = 1) =>
     </span>
   ));
 
+
 function ServiceArt({ kind }) {
-  // Colors follow the theme through `currentColor` (see .service-art in CSS).
-  const g = {
-    fill: 'none',
-    stroke: 'currentColor',
-    strokeWidth: 1.6,
-    strokeLinecap: 'round',
-    strokeLinejoin: 'round',
-  };
-
-  const soft = {
-    fill: 'currentColor',
-    fillOpacity: 0.14,
-    stroke: 'currentColor',
-    strokeWidth: 1.6,
-    strokeLinejoin: 'round',
-  };
-
-  const wheel = {
-    style: { fill: 'var(--bg)', stroke: 'currentColor' },
-    strokeWidth: 1.6,
-  };
-
   const art = [
-    // 0: Contracting
-    <g key="c">
-      <path d="M20 200h260" {...g} />
-      <rect x="170" y="110" width="70" height="90" {...soft} />
+    // 0: Environmental services — sculptural leaf
+    <g key="leaf">
+      <ellipse cx="150" cy="174" rx="77" ry="17" fill="#78905b" opacity=".12" />
+      <circle cx="150" cy="108" r="73" fill="url(#envGlow)" opacity=".65" />
       <path
-        d="M170 135h70M170 160h70M195 110v90M215 110v90"
-        {...g}
-        opacity=".5"
+        d="M91 153C88 101 117 58 198 48C199 111 171 160 91 153Z"
+        fill="url(#leafMetal)"
+        stroke="#a6bb83"
+        strokeWidth="1.5"
       />
-      <path d="M70 200V50M70 50h120M70 50l-26 26M190 50v26" {...g} />
-      <path d="M70 90l50-40M70 130l50-80" {...g} opacity=".45" />
-      <path d="M150 50v38" {...g} className="art-swing" />
-      <rect
-        x="140"
-        y="88"
-        width="20"
-        height="14"
-        {...soft}
-        className="art-swing"
-      />
+      <path d="M93 153Q146 112 190 57" fill="none" stroke="#d0dda8" strokeWidth="2" />
+      <path d="M126 128L120 91M145 111L167 105M159 94L157 75M111 140L106 117" fill="none" stroke="#d0dda8" strokeWidth="1.2" opacity=".7" />
+      <path d="M90 183Q150 197 210 183" fill="none" stroke="#8da76a" strokeWidth="1.5" opacity=".65" />
+      <circle cx="208" cy="83" r="3" fill="#d0dda8" />
+      <circle cx="91" cy="89" r="2" fill="#d0dda8" opacity=".7" />
     </g>,
 
-    // 1: Pest control
-    <g key="p">
-      <path
-        d="M150 40l62 22v52c0 40-28 66-62 80-34-14-62-40-62-80V62z"
-        {...soft}
-      />
-      <path d="M120 120l24 24 40-48" {...g} strokeWidth="3" />
-      <circle cx="60" cy="70" r="5" {...g} className="art-pop" />
-      <circle cx="248" cy="100" r="4" {...g} className="art-pop d2" />
-      <circle cx="238" cy="52" r="3" {...g} className="art-pop d3" />
-      <circle cx="52" cy="140" r="3.5" {...g} className="art-pop d4" />
-      <path d="M40 200h220" {...g} />
+    // 1: Waste transportation — premium waste truck
+    <g key="truck">
+      <ellipse cx="150" cy="185" rx="112" ry="14" fill="#78905b" opacity=".13" />
+      <rect x="39" y="92" width="133" height="70" rx="5" fill="url(#truckMetal)" stroke="#91a87a" strokeWidth="1.5" />
+      <path d="M39 112H172M39 133H172" stroke="#c1d0a6" strokeWidth="1" opacity=".35" />
+      <path d="M53 103H157" stroke="#d4dfbc" strokeWidth="1.5" opacity=".65" />
+      <path d="M172 119H204L235 148V162H172Z" fill="url(#truckMetal)" stroke="#91a87a" strokeWidth="1.5" />
+      <path d="M184 126H201L222 146H184Z" fill="#17221a" stroke="#a9be8b" strokeWidth="1.2" />
+      <path d="M44 151H166M179 151H227" stroke="#c7d8ad" strokeWidth="2" opacity=".7" />
+      <circle cx="79" cy="166" r="17" fill="#111511" stroke="#8da76a" strokeWidth="2" />
+      <circle cx="79" cy="166" r="7" fill="#788c5b" stroke="#d0dda8" strokeWidth="1.5" />
+      <circle cx="203" cy="166" r="17" fill="#111511" stroke="#8da76a" strokeWidth="2" />
+      <circle cx="203" cy="166" r="7" fill="#788c5b" stroke="#d0dda8" strokeWidth="1.5" />
+      <path d="M97 121L109 137L122 121L134 137L146 121" fill="none" stroke="#d0dda8" strokeWidth="2" opacity=".8" />
+      <rect x="47" y="99" width="116" height="5" rx="2" fill="#a5bc84" opacity=".4" />
     </g>,
 
-    // 2: Waste transport
-    <g key="w">
-      <path d="M20 200h260" {...g} />
-      <rect x="40" y="110" width="110" height="68" {...soft} />
-      <path d="M150 130h46l26 28v20h-72z" {...soft} />
-      <path d="M170 138h22l16 18h-38z" {...g} />
-      <circle cx="80" cy="184" r="14" {...wheel} className="art-spin" />
-      <circle cx="190" cy="184" r="14" {...wheel} className="art-spin" />
-      <path d="M62 126l12 36M92 126l-12 36M110 126l-12 36" {...g} opacity=".5" />
-      <path d="M262 200v-34h26v34z" {...soft} />
-      <path d="M258 166h34" {...g} />
+    // 2: Pest control — protection shield
+    <g key="pest">
+      <circle cx="150" cy="108" r="72" fill="url(#envGlow)" opacity=".55" />
+      <path d="M150 43L211 65V112C211 149 183 173 150 189C117 173 89 149 89 112V65Z" fill="url(#shieldMetal)" stroke="#a5bc84" strokeWidth="2" />
+      <path d="M150 57L198 74V111C198 139 178 159 150 174C122 159 102 139 102 111V74Z" fill="#111a12" stroke="#6f8b55" strokeWidth="1.3" />
+      <path d="M150 83V139M124 111H176" stroke="#819d63" strokeWidth="1" opacity=".4" />
+      <ellipse cx="150" cy="109" rx="12" ry="17" fill="#8fa96a" stroke="#d0dda8" strokeWidth="1.5" />
+      <circle cx="150" cy="88" r="7" fill="#a9bf84" stroke="#d0dda8" strokeWidth="1.3" />
+      <path d="M144 84L137 76M156 84L163 76M139 102L125 94M139 113L124 120M161 102L175 94M161 113L176 120M145 124L136 136M155 124L164 136" fill="none" stroke="#d0dda8" strokeWidth="2" strokeLinecap="round" />
+      <path d="M132 151L145 163L171 132" fill="none" stroke="#d0dda8" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </g>,
 
-    // 3: Infrastructure
-    <g key="i">
-      <path d="M20 200h260" {...g} />
-      <path d="M30 150h240" {...g} strokeWidth="3" />
-      <path d="M50 150v50M110 150v50M190 150v50M250 150v50" {...g} />
-      <path d="M30 150Q80 70 150 70T270 150" {...g} />
-      <path
-        d="M70 118v32M110 92v58M150 72v78M190 92v58M230 118v32"
-        {...g}
-        opacity=".5"
-      />
-      <path
-        d="M30 175h240"
-        {...g}
-        strokeDasharray="8 10"
-        opacity=".4"
-        className="art-dash"
-      />
+    // 3: Project coordination — environmental operations
+    <g key="operations">
+      <ellipse cx="150" cy="181" rx="91" ry="12" fill="#78905b" opacity=".13" />
+      <rect x="74" y="60" width="115" height="126" rx="7" fill="url(#truckMetal)" stroke="#91a87a" strokeWidth="1.5" />
+      <rect x="88" y="76" width="87" height="95" rx="3" fill="#121a13" stroke="#71885b" strokeWidth="1.2" />
+      <path d="M105 95H158M105 108H150M105 121H156" stroke="#91a87a" strokeWidth="2" strokeLinecap="round" opacity=".6" />
+      <circle cx="110" cy="143" r="8" fill="#829c62" opacity=".35" stroke="#c0d1a2" strokeWidth="1.2" />
+      <path d="M106 143L109 146L115 139" fill="none" stroke="#d0dda8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M129 143H158" stroke="#91a87a" strokeWidth="2" strokeLinecap="round" />
+      <path d="M129 155H151" stroke="#91a87a" strokeWidth="2" strokeLinecap="round" opacity=".6" />
+      <path d="M112 60V48Q112 38 122 38H141Q151 38 151 48V60" fill="#253524" stroke="#91a87a" strokeWidth="1.5" />
+      <path d="M200 81L215 66L226 77L211 92Z" fill="url(#leafMetal)" stroke="#a5bc84" strokeWidth="1.3" />
+      <path d="M197 85L208 96" stroke="#d0dda8" strokeWidth="2" />
+      <circle cx="218" cy="58" r="3" fill="#d0dda8" />
+      <path d="M52 188H248" stroke="#8da76a" strokeWidth="1.5" opacity=".5" />
     </g>,
   ];
 
@@ -199,10 +174,31 @@ function ServiceArt({ kind }) {
       viewBox="0 0 300 220"
       aria-hidden="true"
     >
+      <defs>
+        <radialGradient id="envGlow">
+          <stop offset="0%" stopColor="#829b61" stopOpacity=".34" />
+          <stop offset="100%" stopColor="#829b61" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id="leafMetal" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#d0dda8" />
+          <stop offset="45%" stopColor="#708c50" />
+          <stop offset="100%" stopColor="#293d27" />
+        </linearGradient>
+        <linearGradient id="truckMetal" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#435a3a" />
+          <stop offset="55%" stopColor="#202e20" />
+          <stop offset="100%" stopColor="#111711" />
+        </linearGradient>
+        <linearGradient id="shieldMetal" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#455e38" />
+          <stop offset="100%" stopColor="#172218" />
+        </linearGradient>
+      </defs>
       {art[kind % art.length]}
     </svg>
   );
 }
+
 
 export default function App() {
   const [lang, setLang] = useState('en');
@@ -211,7 +207,6 @@ export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [lightbox, setLightbox] = useState(null);
 
-  // Restore the saved theme, defaulting to dark mode.
   const [theme, setTheme] = useState(() => {
     try {
       return localStorage.getItem('portfolio-theme') === 'light'
@@ -222,7 +217,6 @@ export default function App() {
     }
   });
 
-  // Apply the theme to the document and save the preference.
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
 
@@ -258,8 +252,8 @@ export default function App() {
   const displayName = isAr ? 'عبدالرحمن سليم' : profile.name;
 
   const displayRole = isAr
-    ? `مدير مشروعات · شركة ${profile.companyAr}`
-    : `${profile.role} · ${profile.company}`;
+    ? 'مدير مشروعات · M.A.S Development'
+    : `${profile.role} · M.A.S Development`;
 
   const displayLocation = isAr
     ? 'المدينة المنورة، السعودية'
@@ -371,12 +365,6 @@ export default function App() {
           { opacity: 0, scale: 0.92, y: 50 },
           { opacity: 1, scale: 1, y: 0, duration: 1.2 },
           0.3
-        )
-        .fromTo(
-          '.float-card',
-          { opacity: 0, x: isAr ? 30 : -30 },
-          { opacity: 1, x: 0, duration: 0.8 },
-          '-=.5'
         );
 
       gsap.to('.hero-orb', {
@@ -645,7 +633,6 @@ export default function App() {
             {isAr ? 'EN' : 'عربي'}
           </button>
 
-          {/* Dark / Light Mode */}
           <button
             className="theme-toggle"
             onClick={toggleTheme}
@@ -664,11 +651,7 @@ export default function App() {
                   : 'Dark Mode'
             }
           >
-            {theme === 'dark' ? (
-              <Sun size={17} />
-            ) : (
-              <Moon size={17} />
-            )}
+            {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
           </button>
 
           <button
@@ -757,11 +740,6 @@ export default function App() {
                 <small>{displayRole}</small>
               </div>
             </div>
-
-            <div className="float-card">
-              <MapPin size={14} />
-              {displayLocation}
-            </div>
           </div>
         </section>
 
@@ -804,9 +782,7 @@ export default function App() {
               </div>
             ))}
 
-            <div className="stat-note reveal-card">
-              “{t.quote}”
-            </div>
+            <div className="stat-note reveal-card">“{t.quote}”</div>
           </div>
         </section>
 
@@ -854,10 +830,7 @@ export default function App() {
 
           <div className="experience-list">
             {t.experience.map((item, i) => (
-              <article
-                className="exp-item"
-                key={item.period + i}
-              >
+              <article className="exp-item" key={item.period + i}>
                 <div className="exp-marker">
                   {String(i + 1).padStart(2, '0')}
                 </div>
@@ -950,7 +923,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* SERVICES / PROJECTS */}
+        {/* ENVIRONMENTAL SERVICES / PROJECTS */}
         <section className="section-shell section-pad" id="projects">
           <div className="section-heading project-heading reveal">
             <div>

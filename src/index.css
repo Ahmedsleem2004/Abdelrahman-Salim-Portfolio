@@ -1440,3 +1440,89 @@ p {
     scroll-behavior: auto !important;
   }
 }
+
+/* =========================================================
+   ENVIRONMENTAL SERVICES — RESPONSIVE TEXT FIXES
+   ========================================================= */
+
+/* Keep the loader text centered and prevent overflow */
+.loader-inner {
+  width: min(100%, 900px);
+  max-width: 100%;
+}
+
+.loader-kicker,
+.loader-foot {
+  max-width: 100%;
+  line-height: 1.8;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* Responsive company name in the intro loader */
+.loader-name {
+  max-width: 100%;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.loader-name span {
+  color: var(--accent);
+}
+
+/* Prevent long job titles from overflowing the portrait caption */
+.visual-caption {
+  max-width: 100%;
+}
+
+.visual-caption strong,
+.visual-caption small {
+  overflow-wrap: anywhere;
+}
+
+.visual-caption small {
+  display: block;
+  line-height: 1.7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 560px) {
+  .loader-inner {
+    gap: 14px;
+    padding: 20px 16px;
+  }
+
+  .loader-kicker,
+  .loader-foot {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+  }
+
+  .loader-name {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    letter-spacing: 0.01em;
+  }
+
+  .loader-name span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.55em;
+    line-height: 1.5;
+  }
+
+  .visual-caption {
+    inset-inline: 10px;
+    padding: 14px 16px;
+  }
+
+  .visual-caption small {
+    font-size: 0.76rem;
+  }
+}
+
+/* Respect the selected text direction */
+.rtl .loader-kicker,
+.rtl .loader-foot {
+  letter-spacing: 0.04em;
+}
