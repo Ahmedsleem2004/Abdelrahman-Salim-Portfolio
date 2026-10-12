@@ -80,11 +80,12 @@ function IntroLoader({ onDone }) {
         </span>
 
         <div className="loader-name">
-          M.A.S <span>DEVELOPMENT</span>
-        </div>
+  <span className="loader-person-name">Abdelrahman Salim</span>
+  
+</div>
 
         <div className="loader-line" />
-
+<span className="loader-company-name">M.A.S DEVELOPMENT</span>
         <span className="loader-foot">
           ENVIRONMENTAL SERVICES · SUSTAINABLE OPERATIONS
         </span>
